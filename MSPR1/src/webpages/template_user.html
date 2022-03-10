@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="header">
+
+    <nav class="header__nav">
+
+        <div class="header__logo">
+            <img src="img/logo.png" alt="">
+        </div>
+
+        <ul class="header__list">
+            <li><a href="index.html" class="main__nav-link"><i class="fas fa-home"></i> Accueil </a> </li>
+            <li><i class="fas fa-user-alt"></i>  Mon Profil </li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <div class="main__nav">
+
+        <div class="main--nav-left">
+            <h2 class="main__nav-title">Mon profil</h2>
+            <span class="main__nav-date"><a href="index.html" class="main__nav-link"><i class="fas fa-chevron-left"></i> Retourner à l'accueil</a></span>
+        </div>
+
+        <div class="main--nav-right">
+            <span class="main__nav-name">    Nom : $lastname Prénom : $name           </span>
+        </div>
+
+    </div>
+
+    <div class="main__jumbotron">
+
+        <div class="main--jumbotron-left">
+            <h1 class="main__jumbotron-title">Espace personel</h1>
+            <p >toutes vos informations personnelles sont ici !</p>
+        </div>
+
+        <div class="main--jumbotron-right">
+            <img src="./img/jumbotron.png" alt="" class="main__jumbotron-img">
+        </div>
+
+    </div>
+
+
+
+
+    <div class="profiles">
+
+        <h2 class="profiles-title">Liste des agents : </h2>
+
+        <div class="profiles-container">
+
+            <div class="card card--secondary">
+
+                <h2 class="card__title-profil"><i class="fas fa-user-alt"></i> Prénom : $name</h2>
+                <h3 class="card__title-subtitle">Nom : $lastname </h3>
+
+
+            </div>
+
+            <div class="card">
+
+                <h2 class="card__title-profil"><i class="fas fa-tools"></i> Equipements</h2>
+
+                <div class="padding">
+                    <span>$tools</span>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="$imgsrc" class="card-profile-img">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</main>
+
+
+
+
+</html>

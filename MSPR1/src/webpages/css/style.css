@@ -1,0 +1,287 @@
+@font-face {
+    font-family: "Poppins Regular";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: "Poppins Medium";
+    src: url("../fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Poppins Light";
+    src: url("../fonts/Poppins-Light.ttf");
+}
+
+:root {
+    --primary : #379EC1 ;
+    --recondary : #659224 ;
+    --light : #f5f7fbbb  ;
+    --grey : #B0B0B0;
+    --dark: #888888;
+}
+
+body {
+    font-family: "Poppins Regular";
+    background-color: var(--light);
+}
+
+
+.header {
+    position:fixed;
+    top:0 ;
+    left: 0 ;
+    height:100vh;
+    width:18%;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 0px 12px -6px rgba(0,0,0,0.14);
+    -moz-box-shadow: 2px 0px 12px -6px rgba(0,0,0,0.14);
+    box-shadow: 2px 0px 12px -6px rgba(0,0,0,0.14);
+}
+
+
+@media (max-width:750px) {
+    .header {
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        height:auto;
+        width:100%;
+    }
+
+
+
+    .header__logo img {
+        display: none;
+    }
+
+    .header__list {
+        display:flex;
+    }
+
+    .header__list li {
+        margin:1rem 1rem;
+    }
+
+
+}
+
+.header__nav {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:80%;
+    margin:auto;
+    color:grey;
+}
+
+.header__nav li {
+    padding:0.8rem 0;
+    color: var(--grey);
+    font-family: 'Poppins Light';
+    font-size: 1.2rem;
+}
+
+.header__nav i {
+    padding-right: 1rem;
+}
+
+.header__nav li:hover {
+    color: var(--primary);
+    transition-duration: 400ms;
+}
+
+
+.header__logo img {
+    width:85%;
+    margin:auto;
+    padding:4rem 0 6rem 1rem;
+}
+
+main {
+    margin-left : 18vw;
+    padding:4rem;
+}
+
+@media (max-width:750px) {
+    main {
+        margin-left : 0;
+        padding:4rem;
+    }
+}
+
+.main__title {
+    font-size: 2rem;
+    font-family: "Poppins Medium";
+}
+
+.profiles {
+    margin:5rem 0;
+}
+
+.profiles-container {
+    margin:4rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profiles-title {
+    font-size: 1.5rem;
+    font-family: 'Poppins Medium';
+}
+
+.card {
+    width:32%;
+    background-color: #fff;
+    border-radius:0 10px 10px 0;
+    -webkit-box-shadow: 2px 0px 12px -6px rgba(0,0,0,0.14);
+    -moz-box-shadow: 2px 0px 12px -6px rgba(0,0,0,0.14);
+    box-shadow: 2px 0px 12px -6px rgba(0,0,0,0.14);
+}
+
+
+.card__title {
+    font-size: 1.5rem;
+    padding:2rem;
+}
+
+.card__title a {
+    color:var(--dark);
+    text-decoration: none;
+}
+
+.card__title i {
+    padding-right: 0.5rem;
+}
+
+.card__container {
+    padding:2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card__container-light {
+    color: var(--grey);
+    font-size: 0.8rem;
+}
+
+.card__container-link {
+    color: var(--recondary);
+}
+
+.card__container i {
+    padding-left: 0.5rem;
+}
+
+.main__nav {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom:2rem;
+    width:95%;
+}
+
+
+@media (max-width : 750px) {
+
+    .card {
+        width:100%;
+        margin: 2rem 0;
+    }
+
+    .card img {
+        margin-top: 2rem;
+        height:auto;
+    }
+
+}
+
+.main__nav-title {
+    font-size: 1.5rem;
+    font-family: 'Poppins Medium';
+    padding-bottom: 0.5rem;
+
+}
+
+.main__nav-date {
+    color: var(--grey);
+}
+
+.main__nav-link {
+    color: var(--grey);
+    text-decoration: none;
+}
+
+.main__nav-link:hover {
+    color: var(--primary);
+    transition-duration: 400ms;
+}
+
+.main__jumbotron {
+    background-color: rgba(163,237,216,0.4);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    padding:5rem 2rem;
+    margin:1rem 0;
+}
+
+
+.main__jumbotron-img {
+    position:absolute;
+    right:2rem ;
+    top : -2rem ;
+    height:140%;
+}
+
+.main__jumbotron-title {
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.main__nav-buttun {
+    color: var(--recondary);
+    background-color: rgba(163,237,216,0.05);
+    border : solid 1px var(--recondary);
+    border-radius:25px;
+    padding:0.8rem 1rem;
+
+}
+
+
+.main__nav-name {
+    color: var(--grey);
+}
+
+.card__title-profil {
+    font-size: 1.5rem;
+    padding: 4rem 0 1rem 1.5rem;
+}
+
+.card__title-subtitle {
+    font-size: 1.2rem;
+    padding: 0 0 4rem 1.5rem;
+
+}
+
+.card--secondary {
+    background-color: rgba(244,223,100,0.35);
+
+}
+
+
+
+.card-profile-img {
+    width:100%;
+    margin-top: -3rem;
+}
+
+.padding {
+    padding:1.5rem;
+}
