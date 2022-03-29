@@ -16,8 +16,8 @@ public class Main {
     public static List<String> users() {
         // Entrer ses données utilisateurs de Github
         java.net.URL url = null;
-        String username = "sidney.audibert@gmail.com";
-        String password = "Babounez01!";
+        String username = "*******************";
+        String password = "***********";
         String file = "";
         try {
             // Se connecter au Github
